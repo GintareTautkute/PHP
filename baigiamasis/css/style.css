@@ -1,0 +1,506 @@
+*
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family:'Titillium web', sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+.flex-container {
+    display:flex;
+}
+
+/*Header*/
+
+.site-header {
+    background-color:#fff;
+    position:fixed;
+    width:100%;
+    display:block;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.site-header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav li{
+    list-style: none;
+}
+
+.main-nav a {
+    color:#836393;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin:0 5px;
+    padding:10px 17px;
+}
+
+.main-nav a:hover, .main-nav a:active{
+    background-color:rgb(224, 187, 138);
+    border-radius: 5px;
+}
+
+.mobile-nav {
+    display:none;
+}
+
+.logo{
+    padding: 40px 0;
+}
+
+/*Dvaro foto/Laukiame jusu..*/
+
+.dvaras img {
+    width:100%;
+    display: block;
+}
+
+.welcome {
+    background-color:rgb(224, 187, 138);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section > .container{
+    padding:120px 0;
+}
+
+.welcome h1{
+    color:#836393;
+    font-size:2.2rem; /*tikslas padalintas is konteksto*/
+    line-height: 1.1428;
+    max-width:843px;
+    margin: 20px auto;
+}
+
+.welcome p{
+    color:#836393;
+    font-size:1.8rem; /*tikslas padalintas is konteksto*/
+    line-height: 1.1428;
+    max-width:843px;
+    margin: 20px auto;
+}
+
+/*Paslaugos*/
+
+.services {
+    background-color: #698758;
+}
+
+.services h2 {
+    color: #fff;
+    font-size:2.2rem;
+    text-align: center;
+}
+
+.service h3 {
+    font-size:1.7rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.service p {
+    font-size:1.4rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.services h2:after {
+    content:"";
+    display:block;
+    width: 90px;
+    border-top: 4px solid #fff;
+    margin: 22px auto;
+}
+
+.service, h3, p {
+    text-align:center;
+    max-width: 400px;
+    margin: 60px auto 60px;
+}
+
+/* Tiny slider */
+
+.slider-container img{
+	display: block;
+	width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+/* Kontaktine info */
+
+.contact {
+    background-color:rgb(224, 187, 138);
+    color:#fff;
+}
+
+.contact .container {
+    padding-bottom:10px;
+    width: 100%;
+    max-width: 860px;
+}
+
+.contact h4 {
+    color: #fff;
+    font-size:2.2rem;
+    text-align: center;
+}
+
+.contact .section-content {
+    width: 80%;
+    max-width: 860px;
+    margin:80px auto;
+}
+
+#contact-form input {
+    margin-bottom:30px;
+}
+
+#contact-form input {
+    padding: 20px 25px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(175, 139, 92);
+    color:#fff;
+    width: calc(50% -18px);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color:#fff;
+}
+
+#contact-form input:first-child {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+#contact-form input:last-child {
+    margin-left: 16px;
+}
+
+#contact-form textarea {
+    border:none;
+    width: 100%;
+    border-radius: 5px;
+    padding:25px;
+    background-color: rgb(175, 139, 92);
+    color:#fff;
+}
+
+#contact-form button {
+    background-color: rgb(236, 205, 162);
+    border-radius: 5px;
+    border-color:rgb(175, 139, 92);
+    color: #fff;
+    font-size: 15px;
+}
+
+#contact-form button {
+    margin: 60px auto 0;
+    display: block;
+    width:300px;
+    height: 50px;
+}
+
+/* Ikoneles */
+
+.footer {
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+}
+
+.footer {
+    background-color: rgb(224, 187, 138);
+    padding: 0;
+}
+
+.footer li {
+    display:inline-block;
+}
+
+.footer ul {
+    list-style:none;
+    padding: 0;
+}
+
+.footer img {
+    width: 35px;
+}
+
+.footer ul li img {
+    padding: 30px;
+} 
+
+/*Apie mus puslapis*/
+
+.about {
+    background-color:#fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+section > .container{
+    padding:120px 0 0 0;
+}
+
+.about h5{
+    color:#7a9363;
+    font-size:3rem; /*tikslas padalintas is konteksto*/
+    margin:30px 0;
+}
+
+.about h5:after {
+    content:"";
+    display:block;
+    width: 90px;
+    border-top:4px solid #52663f;
+    margin:22px auto;
+}
+
+.istorija-pirmas .container{
+    padding-top: 0;
+    padding-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+h6 {
+    color:#7a9363;
+    font-size:2rem;
+    text-align: center;
+    padding: 0;
+}
+
+h6:after {
+    content:"";
+    display:block;
+    width: 90px;
+    border-top:4px solid #52663f;
+    margin:22px auto;
+}
+
+.istorija .container{
+    padding-top: 0;
+    padding-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+
+/* Plancetes versija*/
+
+@media screen and (max-width:720px){
+    .main-nav {
+        display:none;
+    }
+
+    .site-header .container {
+        display: block;
+        height: fit-content;
+    }
+
+    .logo {
+        float:left;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .mobile-nav {
+        position:relative;
+        width:100%;
+        display: block;
+    }
+
+    .mobile-nav ul {
+        flex-direction: column;
+        display: none;
+        position:absolute;
+        width:100%;
+        top:133px;
+        padding:20px;
+        background-color: #fff;
+    }
+    .mobile-nav li {
+        list-style: none;
+    }
+    .mobile-nav a {
+        color:#836393;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 5px;
+        padding: 10px 17px;
+        display:block;
+    }
+    
+    .mobile-nav a:hover, .mobile-nav a:active{
+        background-color: rgb(224, 187, 138);
+        border-radius: 5px;
+        color: #836393;
+    }
+    .mobile-nav a.icon {
+        display:block;
+        position:absolute;
+        right:70px;
+        top:60px;
+        color:#836393;
+    }
+
+    .services .section-content {
+        flex-direction: column;
+    }
+
+    .service {
+        max-width:100%;
+        margin: 0;
+    }
+
+    #contact-form input {
+        flex-direction:column;
+        max-width:80%;
+        margin-left: 35px;
+    }
+
+    #contact-form textarea {
+        flex-direction:column;
+        max-width:80%;
+        margin-left: 35px;
+    }
+
+    .istorija-pirmas .container{
+        flex-direction:column;
+    }
+
+    .istorija-pirmas img {
+        object-fit: scale-down;
+    }
+
+    .istorija .container {
+        flex-direction:column;
+    }
+
+    .istorija img {
+        object-fit: scale-down;
+    }
+
+    .istorija p {
+        object-fit: scale-down;
+    }
+
+    #contact-form .copyright {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    section > .container {
+        padding:60px 0;
+    }
+
+    .site-header {
+        position:fixed;
+        display:block;
+        max-width: 370px;
+    }
+
+    .logo img {
+        max-width: 65%;
+        max-height: 65%;
+    }
+
+    .container {
+        padding:0 20px;
+    }
+    
+    .welcome {
+        padding-bottom: 0;
+    }
+
+    .welcome h1 {
+        font-size:1.4rem;
+    }
+
+    .welcome p {
+        font-size:1.3rem;
+    }
+
+    .services h2 {
+        font-size:1.5rem;
+    }
+
+    .services h3 {
+        font-size:1.4rem;
+    }
+
+    .services p {
+        font-size:1.2rem;
+    }
+
+    #contact-form input {
+        flex-direction:column;
+        max-width:80%;
+        margin-left:50px;
+    }
+
+    #contact-form textarea {
+        flex-direction:column;
+        max-width:65%;
+        margin-left: 50px;
+    }
+
+    #contact-form button {
+        max-width:65%;
+        margin: 50px;
+    }
+
+    #contact-form .copyright {
+        margin-bottom: 0;
+    }
+
+    .about h5 {
+        font-size:1.6rem;
+    }
+
+    .istorija-pirmas img {
+        object-fit: scale-down;
+        max-width: 370px;
+    }
+
+    .istorija-pirmas .container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .istorija img {
+        object-fit: scale-down;
+        max-width: 370px;
+    }
+
+    .istorija .container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+}
